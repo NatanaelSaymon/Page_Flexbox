@@ -42,6 +42,10 @@ header h2{
     text-transform: uppercase;
 }
 
+header nav{
+    line-height: 40px;
+}
+
 header nav ul{
     display: flex;
 }
@@ -56,6 +60,19 @@ header nav ul li:first-child{
 
 header nav ul li:last-child{
     margin-right: 0;
+}
+
+header nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+    background-color: #472663;
+    transition: .5s;
 }
 
 /*HEADER MOBILE*/
