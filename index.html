@@ -7,6 +7,28 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
         <script src="https://kit.fontawesome.com/ecc011f1dd.js"></script>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(window).scrollTop() > 300){
+                        $('.seta').css({
+                            "opacity":"1", "pointer-events":"auto"
+                        });
+                    }else{
+                        $('.seta').css({
+                            "opacity":"0", "pointer-events":"none"
+                        });
+                    }
+                });
+
+                $('.seta').click(function(){
+                    $('html').animate({scrollTop:0}, 500);
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -30,6 +52,9 @@
             <a href="#contact" class="banner-btn">Contato</a>
         </section>
 
+        <!--SETA-->
+        <i class="fas fa-chevron-up seta"></i>
+        
         <!-- ABOUT AREA -->
         <section class="about-area" id="about">
             <h3 class="section-title">Sobre nós</h3>
